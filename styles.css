@@ -1,0 +1,499 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+#main_page{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+  background: url('https://i.ibb.co/9WWyKpp/Ghost-of-Tsushima-20210123223255.jpg') no-repeat top center ;
+  background-size: cover;
+}
+
+#exp_page{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+  --nav-link-load-time: 800ms;
+  background: url('https://i.ibb.co/1LsZGhN/Ghost-of-Tsushima-20201013161611.jpg') no-repeat top center ;
+  background-size: cover;
+}
+#contact_page{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+  --nav-link-load-time: 800ms;
+  background: url('https://i.ibb.co/Js4wTpY/Ghost-of-Tsushima-20200723155754.jpg') no-repeat top center ;
+  background-size: cover;
+}
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: rgba(46, 49, 49, 1);
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  color: white;
+  max-width: 700px;
+  width: 100%;
+  opacity: 90%;
+
+}
+
+.card1 {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: rgba(46, 49, 49, 1);
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  color: white;
+  max-width: 700px;
+  width: 100%;
+  position: static;
+  left: -170px;
+}
+
+.card2 {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: rgb(48, 49, 46);
+  border: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  color: white;
+  max-width: 700px;
+  width: 100%;
+  position:static;
+  right: -170px;
+}
+.card:hover {
+  border-color: #0553e4;
+}
+.card1:hover {
+  border-color: #ff99ff;
+}
+
+.card2:hover{
+  border-color: #b8e906;
+
+}
+
+h2, h1{
+  padding: 20px;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+}
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #6633ff;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 60px;
+  height: 60px;
+  opacity: .4;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.email {
+  background-image: url(images/email.svg);
+  background-color: azure;
+  width: 80px;
+  height: 60px;
+  background-size: cover;
+  border-radius: .9em;
+}
+a.social:hover {
+  opacity: 1;
+}
+
+.row1{
+  display: flex;
+  justify-content: space-between center;
+}
+.row2{
+  display: flex;
+  justify-content: space-between center;
+}
+
+#github_link{
+  margin: 60px;
+}
+
+/* Nav bar  */
+.nav a {
+  transition: all .5s;
+}
+.nav a:hover {
+  color: white
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  animation: nav-load 100ms ease-in;
+
+}
+
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+  animation: nav-load 1s;
+  z-index: 1;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: white;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+  margin: 0 10px;
+  animation-name: nav-link-load;
+  animation-duration: var(--nav-link-load-time);
+  animation-timing-function: ease-in;
+  animation-delay: var(--nav-link-load-time);
+  transform: scale(0);
+  animation-fill-mode: forwards;
+}
+
+.nav li:second-child{
+  animation-name: nav-sec-link-load;
+  transform: translateX(-100%);
+
+}
+
+.nav_home{
+  color:rgb(144, 45, 201);
+}
+
+.nav_home:hover{
+  background-color: rgb(144, 45, 201);
+  padding: 5px 5px;
+}
+
+.nav_exp{
+  color:rgba(201, 74, 30, 1);
+}
+
+.nav_exp:hover{
+  background-color: rgb(252, 63, 0);
+  padding: 5px 5px;
+}
+
+.nav_contact{
+  color:rgb(6, 125, 155);
+}
+
+.nav_contact:hover{
+  background-color: rgb(0, 204, 255);
+  padding: 5px 5px;
+}
+
+/* Images */
+
+.image{
+  position: relative;
+  width: 300px;
+
+}
+
+
+.image1{
+  position: relative;
+  width: 300px;
+  top: 35px;
+
+}
+
+.emailTemp{
+  display: block;
+  width: 250%;
+  max-width: 100%;
+  padding: 10px;
+  position:static;
+
+}
+
+.emailTemp1{
+  display: block;
+  width: 250%;
+  max-width: 110%;
+  padding: 10px;
+  position:static;
+}
+
+.login_image{
+  display: block;
+  width: 250%;
+  max-width: 100%;
+  padding: 1px;
+  position:initial;
+}
+
+.reg_image{
+  display: block;
+  width: 250%;
+  max-width: 107%;
+  padding: 10px;
+  position:initial;
+  left: 10%;
+}
+
+.movie_API{
+  display: block;
+  width: 250%;
+  max-width: 100%;
+  padding: 10px;
+  position:initial;
+}
+
+.image_overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+
+.image_overlay:hover{
+  opacity:1;
+}
+
+/* Section Styles */
+
+
+
+header {
+  text-align: center;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+.main-nav {
+  position: fixed;
+  overflow: hidden;
+  
+}
+header .profile-image {
+  margin-top: 50px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+  position: relative;
+  left: -320px;
+}
+header .profile-image:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+.tag {
+  background-color: #efefef;
+  color: rgb(71, 55, 0);
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+  position: relative;
+  bottom: 250px;
+  right: -400px;
+  background: url('https://i.ibb.co/tmLw9n4/Ghost-of-Tsushima-20210123223245.jpg');
+  opacity: 40%;
+  padding: 20px;
+  max-width: 450px;
+} 
+
+.location {
+  background-color: #222;
+  color: yellow;
+}
+
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+
+/* Footter */
+footer {
+  width: 20%;
+  min-height: 10px;
+  padding: 10px 0 10px 10px;
+  background-color: hsla(201, 100%, 6%, 0.6);
+
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+  color: aliceblue;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  
+}
+
+
+
+.clearfix {
+  clear: both;
+}
+
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 420px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+ 
+  }
+
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 10px auto;
+  }
+
+
+
+}
+
+/* Animation Styles*/
+
+@keyframes nav-load{
+  0%{
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-link-load{
+  0%{
+    transform: scale(0);
+  }
+  90%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes nav-sec-link-load{
+  0%{
+    transform: translateX(-100%);
+  }
+  90%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
